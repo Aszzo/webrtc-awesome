@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    // 开启动态引入
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noResolve": false,
+    "noImplicitAny": false,
+//    "removeComments": true, 这个玩意讲移除动态引入的chunkName!!
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "importHelpers": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ]
+  },
+  "exclude": [
+    "./node_modules/**/*"
+  ]
+}
