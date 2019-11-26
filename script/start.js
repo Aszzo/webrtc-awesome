@@ -4,12 +4,13 @@ const Webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const webpackConfig = require('./webpack.dev.js');
 const os = require('os')
-console.log(os.platform())
+
 const pl = os.platform();
+const openBrowser = pl === 'win32' ? 'Chrome' : 'google chrome';
 
 const compiler = Webpack(webpackConfig);
 const devServerOptions = Object.assign({}, webpackConfig.devServer, {
-    open: os === 'win32' ? 'Chrome' : 'google chrome',
+    open: openBrowser,
     stats: {
         colors: true,
     },
