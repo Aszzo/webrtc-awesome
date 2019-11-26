@@ -1,5 +1,6 @@
 import * as React from "react";
-export  default function asyncComponent(importComponent: () => Promise<any>) {
+import {ReactNode} from "react";
+export  default function asyncComponent(importComponent: () => Promise<any>):React.ComponentType<any> {
     class AsyncComponent extends React.Component<any, any> {
         constructor(props: any) {
             super(props);

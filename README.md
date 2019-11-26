@@ -2,7 +2,7 @@
 webrtc demo
 
 #### install
-1. npm install 
+1.npm install 
 
 #### start
 2.npm start 
